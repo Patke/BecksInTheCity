@@ -19,7 +19,8 @@ body {
 #navibereich a {
   color: black;                  /* Schriftfarbe schwarz */
   text-decoration: none;         /* Unterstreichung entfernen */
-  padding: 4px 8px;              /* oben/unten 4px, re/li 8px */
+  padding: 4px 8px;
+  font-size: 40px;           /* oben/unten 4px, re/li 8px */
 }
 
 #navibereich a:hover {

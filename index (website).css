@@ -1,0 +1,132 @@
+@font-face {
+	font-family: 'icon';
+	src: url('icon.eot');
+	src: url('icon.eot?#iefix') format('embedded-opentype'),
+		 url('icon.woff') format('woff'),
+		 url('icon.ttf') format('truetype'),
+		 url('icon.svg#icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'museo-sans-300';
+	src: url('museo-sans-300.eot');
+	src: url('museo-sans-300.eot?#iefix') format('embedded-opentype'),
+		 url('museo-sans-300.woff2') format('woff2'),
+		 url('museo-sans-300.woff') format('woff'),
+		 url('museo-sans-300.ttf') format('truetype'),
+		 url('museo-sans-300.svg#museo_sans300') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source-sans-300';
+	src: url('source-sans-300.eot');
+	src: url('source-sans-300.eot?#iefix') format('embedded-opentype'),
+		 url('source-sans-300.woff2') format('woff2'),
+		 url('source-sans-300.woff') format('woff'),
+		 url('source-sans-300.ttf') format('truetype'),
+		 url('source-sans-300.svg#source_sans300') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source-sans-400';
+	src: url('source-sans-400.eot');
+	src: url('source-sans-400.eot?#iefix') format('embedded-opentype'),
+		 url('source-sans-400.woff2') format('woff2'),
+		 url('source-sans-400.woff') format('woff'),
+		 url('source-sans-400.ttf') format('truetype'),
+		 url('source-sans-400.svg#source_sans400') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source-sans-700';
+	src: url('source-sans-700.eot');
+	src: url('source-sans-700.eot?#iefix') format('embedded-opentype'),
+		 url('source-sans-700.woff2') format('woff2'),
+		 url('source-sans-700.woff') format('woff'),
+		 url('source-sans-700.ttf') format('truetype'),
+		 url('source-sans-700.svg#source_sans700') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color:  #ffffff;
+	background: #333333;
+	font-size: small;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+header {
+	width: 100%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #ffbf00;
+}
+
+/*header > p {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family:fantasy;
+	font-size: 40px;
+	color: black;
+}*/
+
+
+main {
+	padding: 400px;
+	border: solid 15px #333333;
+	background-image: url(./want_to_play_basketball_by_mesha3el.jpg);
+	background-color: #ffbf00;
+}
+
+footer {
+	width: 100%;
+	padding: 45px 0px;
+	background-color: #ffbf00;
+	background-image: url('./basketball.png');
+	background-size: 20%;
+	background-repeat: repeat repeat;
+}
+
+#navibereich li {
+  display: inline;
+  list-style-type: none;
+}
+
+#navibereich {
+  background-color: #ffbf00;        /* Hintergrundfarbe für die Navigation */
+	padding-top: 15px;
+	padding-bottom: 15px;                 /* Innenabstand: oben/unten 4px, li/re 0 */
+  border-top: 3px solid #668BCC;    /* Rahmenlinie oben */
+  border-bottom: 3px solid #668BCC; /* Rahmenlinie unten */
+  margin: 0;                        /* Keinen Außenabstand */
+}
+
+#navibereich a {
+  color: black;                  /* Schriftfarbe schwarz */
+  text-decoration: none;         /* Unterstreichung entfernen */
+  padding: 4px 8px;              /* oben/unten 4px, re/li 8px */
+	font-size: 20px;
+	font-family:fantasy;
+}
+
+#navibereich a:hover {
+  background-color: #EDEDF8;
+}
+
+#navibereich a:hover,        /* mit Komma am Ende */
+#startseite #navi01 a,       /* mit Komma am Ende */
+#addPlayers #navi02 a,
+#players #navi03 a {    /* ohne Komma am Ende */
+  background-color: #c3d9ff;
+}
