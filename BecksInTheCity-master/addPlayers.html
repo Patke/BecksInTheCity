@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Awesome Boilerplate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="design/index.css">
+  <ul id="navibereich">
+  <li id="navi01"><a href="index.html">Startseite</a></li>
+  <li id="navi02"><a href="addPlayers.html">AddPlayers</a></li>
+  <li id="navi03"><a href="players.html">Players</a></li>
+</ul>
+</head>
+
+<body>
+	<header role="banner">
+
+	</header>
+	<main>
+				<figure>
+					<div class="icon icon-learn"></div>
+				</figure>
+				<!-- Form-->
+        <div id="grey">
+          <h1><span>Add players</h1>
+        <form>
+            <table>
+
+
+                <tr>
+                    <td> Vorname : </td>
+                    <td> <input type="text" maxlength="40" value="Vorname"> </td>
+                </tr>
+                <tr>
+                    <td> Nachname :</td>
+                    <td> <input type="text" maxlength="40" value="Nachname"></td>
+                </tr>
+                <tr>
+                  <td> Verein : </td>
+                  <td> <input type="text" maxlength="40" value="Verein"></td>
+                </tr>
+                <tr>
+                  <td>Headcoach : </td>
+                  <td><input type="text" maxlength="40" value="Headcoach"></td>
+                </tr>
+                <tr>
+                  <td> Assistantcoach :</td>
+                  <td> <input type="text" maxlength="40" value="Assistantcoach"></td>
+                </tr>
+                <tr>
+                  <td>Aktiv:</td>
+                  <td>  <input type="checkbox" name="opt[]" value="Aktiv"> Ja<br>
+                    <input type="checkbox" name="opt[]" value="Passiv"> Nein<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td> position </td>
+                  <td>
+                    <select name "positionsliste" size="1">
+      <option value="Position1">Position1</option>
+      <option value="Position2">Position2</option>
+      <option value="Position3">Position3</option>
+      <option value="Position4">Position4</option>
+    </select>
+    </td>
+    </tr>
+
+
+                <tr>
+                  <td>
+                    Rueckennumer : </td>
+                    <td>
+                    <input type="numer" name="Ruckennummer" value="0">
+                </td>
+              </tr>
+                <tr>
+                  <td>
+                    Geburtstag:</td>
+                    <td>
+                    <input type="date" name="bday">
+              </td>
+            </tr>
+            <tr>
+              <td>
+
+                Favorit:</td>
+                <td>
+                    <input type="checkbox" name="opt[]" value="Spieler1"> Spieler1<br>
+                    <input type="checkbox" name="opt[]" value="Spieler2"> Spieler2<br>
+                </td>
+              </tr>
+
+            </table>
+
+        </form>
+      </div>
+<!-- -->
+	</main>
+  <footer>
+
+  </footer>
+	<script src="design/index.js"></script>
+</body>
+</html>

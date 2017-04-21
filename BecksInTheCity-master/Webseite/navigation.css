@@ -1,0 +1,35 @@
+body {
+  font-size: small;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#navibereich li {
+  display: inline;
+  list-style-type: none;
+}
+
+#navibereich {
+  background-color: #F7FFC3;        /* Hintergrundfarbe für die Navigation */
+  padding: 4px 0;                   /* Innenabstand: oben/unten 4px, li/re 0 */
+  border-top: 3px solid #668BCC;    /* Rahmenlinie oben */
+  border-bottom: 3px solid #668BCC; /* Rahmenlinie unten */
+  margin: 0;                        /* Keinen Außenabstand */
+}
+
+#navibereich a {
+  color: black;                  /* Schriftfarbe schwarz */
+  text-decoration: none;         /* Unterstreichung entfernen */
+  padding: 4px 8px;
+  font-size: 40px;           /* oben/unten 4px, re/li 8px */
+}
+
+#navibereich a:hover {
+  background-color: #EDEDF8;
+}
+
+#navibereich a:hover,        /* mit Komma am Ende */
+#startseite #navi01 a,       /* mit Komma am Ende */
+#addPlayers #navi02 a,
+#players #navi03 a {    /* ohne Komma am Ende */
+  background-color: #c3d9ff;
+}
