@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
   <title>Awesome Boilerplate</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <link href="index.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="design/index.css">
+  <script type="text/javascript" src="script.js"></script>
+  <link href="index.css" rel="stylesheet">
   <ul id="navibereich">
   <li id="navi01"><a href="index.html">Startseite</a></li>
   <li id="navi02"><a href="addPlayers.html">AddPlayers</a></li>
   <li id="navi03"><a href="players.html">Players</a></li>
-</ul>
+  </ul>
 </head>
 
 <body>
 	<header role="banner">
-
 	</header>
 	<main>
 				<figure>
@@ -23,7 +21,7 @@
 				<!-- Form-->
         <div id="grey">
           <h1><span>Add players</h1>
-        <form>
+        <form id="form1">
             <table>
 
 
@@ -56,7 +54,7 @@
                 <tr>
                   <td> position </td>
                   <td>
-                    <select name "positionsliste" size="1">
+                    <select name "positionsliste" size="1" value= "Position">
       <option value="Position1">Position1</option>
       <option value="Position2">Position2</option>
       <option value="Position3">Position3</option>
@@ -64,20 +62,18 @@
     </select>
     </td>
     </tr>
-
-
                 <tr>
                   <td>
                     Rueckennumer : </td>
                     <td>
-                    <input type="numer" name="Ruckennummer" value="0">
+                    <input type="nummer" name="Ruckennummer" value="Nummer">
                 </td>
               </tr>
                 <tr>
                   <td>
                     Geburtstag:</td>
                     <td>
-                    <input type="date" name="bday">
+                    <input type="date" name="bday" value = "Geburtstag">
               </td>
             </tr>
             <tr>
@@ -85,20 +81,18 @@
 
                 Favorit:</td>
                 <td>
-                    <input type="checkbox" name="opt[]" value="Spieler1"> Spieler1<br>
-                    <input type="checkbox" name="opt[]" value="Spieler2"> Spieler2<br>
+                    <input type="checkbox" name="opt[]" value="Spieler1"><br>
                 </td>
               </tr>
-
             </table>
+
+            <input form= "form1" type="submit" name="Start" value="Submit" id="button" />
 
         </form>
       </div>
-<!-- -->
 	</main>
   <footer>
 
   </footer>
-	<script src="design/index.js"></script>
 </body>
 </html>
