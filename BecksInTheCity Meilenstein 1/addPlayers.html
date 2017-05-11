@@ -21,7 +21,8 @@
 				<!-- Form-->
         <div id="grey">
           <h1><span>Add players</h1>
-        <form name="myForm" method="post" id="form1">
+        <form name="myForm" method="post" id="form1"
+        onsubmit="validateForm(this, function(e){ return senden(e, this)})">
             <table>
 
 
@@ -97,10 +98,6 @@
             <input type="submit" value="Submit" id="button" />
 
         </form>
-
-        <script type="text/javascript">
-        validateForm(document.getElementById("form1"), function(e){ return senden(e, document.getElementById("form1"))});
-        </script>
 
       </div>
 	</main>

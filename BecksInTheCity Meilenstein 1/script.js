@@ -30,7 +30,7 @@ function senden(e, form){
   xhr.open('POST', 'http://188.166.165.74:13337/api/players', true);
   xhr.responseType = 'json';
   xhr.onload = function(e) {
-    alert("Daten wurden erfolgreich gesendet")
+    alert("Daten wurden .....")
   };
 
     xhr.send(formData)
