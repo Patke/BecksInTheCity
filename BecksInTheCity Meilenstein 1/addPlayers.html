@@ -21,7 +21,7 @@
 				<!-- Form-->
         <div id="grey">
           <h1><span>Add players</h1>
-        <form name="myForm" onsubmit="return validateForm(this)" method="post">
+        <form name="myForm" method="post" id="form1">
             <table>
 
 
@@ -52,8 +52,8 @@
                 </tr>
                 <tr>
                   <td>Aktiv:</td>
-                  <td>  <input type="checkbox" name="opt[]"> Ja<br>
-                    <input type="checkbox" name="opt[]"> Nein<br>
+                  <td>  <input type="radio" name="opt[]" id="Aktiv1"> Ja<br>
+                    <input type="radio" name="opt[]" id="Aktiv2"> Nein<br>
                   </td>
                 </tr>
                 <tr>
@@ -71,7 +71,7 @@
                   <td>
                     Rueckennumer : </td>
                     <td>
-                    <input type="nummer" name="Ruckennummer">
+                    <input type="text" maxlength="40" name="Ruckennummer">
                     <span id=
                     "idRueckennummerMeldung">&nbsp;</span>
                 </td>
@@ -80,7 +80,7 @@
                   <td>
                     Geburtstag:</td>
                     <td>
-                    <input type="date" name="bday" value = "Geburtstag" id ="idDate"><span id=
+                    <input type="date" name="bday" id ="idDate"><span id=
                     "idDateMeldung">&nbsp;</span>
               </td>
             </tr>
@@ -99,8 +99,8 @@
         </form>
 
         <script type="text/javascript">
-
-</script>
+        validateForm(document.getElementById("form1"), function(e){ return senden(e, document.getElementById("form1"))});
+        </script>
 
       </div>
 	</main>

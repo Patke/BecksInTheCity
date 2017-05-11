@@ -1,16 +1,39 @@
-function validateForm(form) {
-    if (form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
-        form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
-        form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
-        form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
-        form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
-        form.FirstName.value.match(/^([A-Za-z ]+)$/)) {
+function validateForm(form, e) {
+    var button = document.getElementById("button");
+    button.addEventListener("submit", senden(e, form));
+
+    if (form.FirstName.value.match(/^([A-Za-z ]+)$/) &&
+        form.Surname.value.match(/^([A-Za-z ]+)$/) &&
+        form.Verein.value.match(/^([A-Za-z ]+)$/) &&
+        form.Headcoach.value.match(/^([A-Za-z ]+)$/) &&
+        form.Assistantcoach.value.match(/^([A-Za-z ]+)$/) &&
+        form.Ruckennummer.value.match(/^([0-9])$/) &&
+        form.Ruckennummer.value > 3 &&
+        form.Ruckennummer.value < 16 &&
+        (document.getElementById("Aktiv1").checked || document.getElementById("Aktiv2").checked) &&
+        (new Date(document.getElementById("idDate").value).getFullYear() <= new Date().getFullYear()) ) {
+
+//          alert("Unser Code ist besser vong Niceigkeit her");
+
 
     }else{
       alert("Einige Eingaben sind fehlerhaft. Bitte ueberpruefen Sie ihre Eingaben.");
-      document.myForm.name.focus();
       return false;
     }
+
+}
+
+function senden(e, form){
+  var formData = new FormData();
+  formData.append('vorname', form.FirstName.value );
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'http://188.166.165.74:13337/api/players', true);
+  xhr.responseType = 'json';
+  xhr.onload = function(e) {
+    alert("Daten wurden erfolgreich gesendet")
+  };
+
+    xhr.send(formData)
 }
 
 /*function meinHandler(id, ereignis, funktion)
