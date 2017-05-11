@@ -1,5 +1,10 @@
 function validateForm(form) {
-    if (form.FirstName.value.match(/^([A-Za-z ]+)$/)) {
+    if (form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
+        form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
+        form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
+        form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
+        form.FirstName.value.match(/^([A-Za-z ]+)$/) ||
+        form.FirstName.value.match(/^([A-Za-z ]+)$/)) {
 
     }else{
       alert("Einige Eingaben sind fehlerhaft. Bitte ueberpruefen Sie ihre Eingaben.");
