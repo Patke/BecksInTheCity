@@ -1,8 +1,6 @@
 <!doctype html>
-<html lang="en">
 <head>
-  <title>Awesome Boilerplate</title>
-  <script type="text/javascript" src="script.js"></script>
+  <title>BecksInTheCity</title>
   <link href="index.css" rel="stylesheet">
   <ul id="navibereich">
   <li id="navi01"><a href="index.html">Startseite</a></li>
@@ -12,20 +10,13 @@
 </head>
 
 <body>
-	<header role="banner">
-	</header>
 	<main>
 				<figure>
-					<div class="icon icon-learn"></div>
 				</figure>
-				<!-- Form-->
         <div id="grey">
           <h1><span>Add players</h1>
-        <form name="myForm" method="post" id="form1"
-        onsubmit="validateForm(this, function(e){ return senden(e, this)})">
+        <form name="myForm" id="form1" onsubmit="validateForm(this)">
             <table>
-
-
                 <tr>
                     <td> Vorname : </td>
                     <td> <input type="text" maxlength="40" name="FirstName"> <span id=
@@ -58,9 +49,9 @@
                   </td>
                 </tr>
                 <tr>
-                  <td> position </td>
+                  <td> Position </td>
                   <td>
-                    <select name "positionsliste" size="1" value= "Position">
+                    <select name="positionsliste" size="1" value= "Position">
       <option value="Position1">Position1</option>
       <option value="Position2">Position2</option>
       <option value="Position3">Position3</option>
@@ -72,9 +63,8 @@
                   <td>
                     Rueckennumer : </td>
                     <td>
-                    <input type="text" maxlength="40" name="Ruckennummer">
-                    <span id=
-                    "idRueckennummerMeldung">&nbsp;</span>
+                    <input type="text" maxlength="40" name="Rueckennummer">
+                    <span id="idRueckennummerMeldung">&nbsp;</span>
                 </td>
               </tr>
                 <tr>
@@ -90,19 +80,23 @@
 
                 Favorit:</td>
                 <td>
-                    <input type="checkbox" name="opt[]" value="Spieler1"><br>
+                    <input type="checkbox" name="Favorit" value="Spieler1"><br>
                 </td>
               </tr>
             </table>
 
-            <input type="submit" value="Submit" id="button" />
+            <button type="submit" id="button">Submit</button>
 
         </form>
 
+
       </div>
+
 	</main>
   <footer>
 
   </footer>
 </body>
+<script src="script.js">
+</script>
 </html>
