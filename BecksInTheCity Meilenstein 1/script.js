@@ -16,7 +16,7 @@ function validateForm(form) {
         (document.getElementById("Aktiv1").checked || document.getElementById("Aktiv2").checked) &&
         (new Date(document.getElementById("idDate").value).getFullYear() <= new Date().getFullYear()) ) {
 
-          document.getElementById("button").addEventListener("submit", senden(form));
+          senden(form);
 
       }else{
           alert("Einige Eingaben sind fehlerhaft. Bitte ueberpruefen Sie ihre Eingaben.");
@@ -29,8 +29,7 @@ function senden(form){
   var xhr = new XMLHttpRequest();
   xhr.open('POST', 'http://188.166.165.74:13337/api/players', true);
   xhr.responseType = 'json';
-  alert("hallo")
-  xhr.onload = function(e) {
+  xhr.onload = function() {
       alert("Daten wurden erfolgreich uebermittelt")
   };
   xhr.send(formData);
