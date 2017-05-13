@@ -29,8 +29,13 @@ function senden(form){
   var xhr = new XMLHttpRequest();
   xhr.open('POST', 'http://188.166.165.74:13337/api/players', true);
   xhr.responseType = 'json';
-  xhr.onload = function() {
+  xhr.onreadystatechange = function() {
+    if(xhr.readyState === XMLHttpRequest.DONE && xhr.status==200){
       alert("Daten wurden erfolgreich uebermittelt")
+    }else if(xhr.readyState === XMLHttpRequest.DONE){
+      alert("Daten konnten nicht erfolgreich uebermittelt werden")
+      console.log(xhr.status);
+    }
   };
   xhr.send(formData);
 }

@@ -4,7 +4,6 @@
   <title>Awesome Boilerplate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="index.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="design/index.css">
   <ul id="navibereich">
   <li id="navi01"><a href="index.html">Startseite</a></li>
   <li id="navi02"><a href="addPlayers.html">AddPlayers</a></li>
@@ -14,27 +13,32 @@
 
 <body id="Home">
 	<header role="banner">
-		<div>
-			<h1>Tabelle mit Spielern</h1>
-			<p>
-        Hier soll eine Tabelle mit Spielern hin
-			</p>
-		</div>
+
 	</header>
 	<main>
-		<div id="grey">
+    <div id="tabellenbox">
+      <form name="myForm">
         <table id="playerTableStyle">
+          <caption>
+            Roster
+          </caption>
           <tr>
-            <td>Spalte 1</td> <td>Spalte 2</td> <td>Spalte 3</td>
+            <td>Name</td> <td>Verein</td> <td>Coach</td> <td>Position</td> <td>Nummer</td> <td>Jahr</td>
           </tr>
           <tr>
-            <td>Spalte 1</td> <td>Spalte 2</td> <td>Spalte 3</td>
+            <td>John Doe</td> <td>Harlem Globetrotters</td> <td>Diego Maradonna</td> <td>Center</td> <td>12</td> <td>1992</td>
           </tr>
           <tr>
-            <td>Spalte 1</td> <td>Spalte 2</td> <td>Spalte 3</td>
+            <td>Martin Meier</td> <td>Harlem Globetrotters</td> <td>Diego Maradonna</td> <td>Center</td> <td>12</td> <td>1992</td>
           </tr>
+        </table>
+      </form>
     </div>
 	</main>
-	<script src="design/index.js"></script>
+  <footer>
+
+  </footer>
+  <script src="scriptplayers.js">
+  </script>
 </body>
 </html>
