@@ -1,11 +1,6 @@
 body {
-	margin: 20px;
-	padding: 0px;
-	color:  #ffffff;
 	background-image: url(./IbDXxHpmED-1920x1080.jpg);
 	background-size: 1440px 900px;
-	font-size: small;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -37,14 +32,14 @@ caption {
 	font-family:fantasy;
 }
 
-.switch {
+.switched {
   position: relative;
   display: inline-block;
   height: 34px;
-	/*width: 475px;*/
+	/*width=340px*/
 }
 
-.switch input {display:none;}
+.switched input {display:none;}
 
 .slider {
   position: absolute;
@@ -54,10 +49,6 @@ caption {
   bottom: 0;
 	background-color: rgba(0, 0, 0, 0);
 }
-
-/*input:checked + .slider {
-  background-color: #2196F3;
-}*/
 
 .slider:before {
   position: absolute;

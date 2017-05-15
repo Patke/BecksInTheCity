@@ -8,7 +8,7 @@ function empfangen(old){
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if(xhr.readyState === XMLHttpRequest.DONE && xhr.status==200){
-      document.getElementById("playerTableStyle").innerHTML = "" + old;
+      document.getElementById("playerTableStyle").innerHTML = old;
       document.getElementById("All").innerHTML  = "All";
       document.getElementById("Favorites").innerHTML  = "";
       var serverResponse = JSON.parse(xhr.responseText);
@@ -38,7 +38,7 @@ function toggle(old){
   xhr.onreadystatechange = function() {
     if(xhr.readyState === XMLHttpRequest.DONE && xhr.status==200){
       var serverResponse = JSON.parse(xhr.responseText);
-      document.getElementById("playerTableStyle").innerHTML = "" + old;
+      document.getElementById("playerTableStyle").innerHTML = old;
       document.getElementById("All").innerHTML  = "";
       document.getElementById("Favorites").innerHTML  = "Favorites";
       for(var k in serverResponse) {
@@ -51,6 +51,7 @@ function toggle(old){
           "</td> <td>"+serverResponse[k].number +
           "</td> <td>"+serverResponse[k].year +"</td> </tr>";
         }
+        document.getElementById("hallo").checked = true;
     }else if(xhr.readyState === XMLHttpRequest.DONE){
       console.log(xhr.status);
       }
