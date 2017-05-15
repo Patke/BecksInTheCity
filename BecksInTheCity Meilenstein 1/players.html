@@ -1,20 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Awesome Boilerplate</title>
+  <title>BecksInTheCity</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="index.css" rel="stylesheet" type="text/css">
   <ul id="navibereich">
-  <li id="navi01"><a href="index.html">Startseite</a></li>
+  <li id="navi01"><a href="index.html">Home</a></li>
   <li id="navi02"><a href="addPlayers.html">AddPlayers</a></li>
   <li id="navi03"><a href="players.html">Players</a></li>
 </ul>
 </head>
-
 <body id="Home">
-	<header role="banner">
-
-	</header>
 	<main>
     <div id="tabellenbox">
       <form name="myForm">
@@ -23,13 +19,19 @@
             Roster
           </caption>
           <tr>
+            <td colspan="2">
+              <label class="switch">
+                <input type="checkbox" onclick="toggle(old)">
+                <div class="slider"></div>
+                <div id="Favorites"></div>
+              </label>
+            </td>
+            <td colspan="4">
+              <div id="All">All</div>
+            </td>
+          </tr>
+          <tr>
             <td>Name</td> <td>Verein</td> <td>Coach</td> <td>Position</td> <td>Nummer</td> <td>Jahr</td>
-          </tr>
-          <tr>
-            <td>John Doe</td> <td>Harlem Globetrotters</td> <td>Diego Maradonna</td> <td>Center</td> <td>12</td> <td>1992</td>
-          </tr>
-          <tr>
-            <td>Martin Meier</td> <td>Harlem Globetrotters</td> <td>Diego Maradonna</td> <td>Center</td> <td>12</td> <td>1992</td>
           </tr>
         </table>
       </form>
