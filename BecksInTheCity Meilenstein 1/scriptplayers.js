@@ -1,15 +1,20 @@
-var old = document.getElementById("playerTableStyle");
+var old = document.getElementById("playerTableStyle").innerHTML;
 document.myForm.addEventListener("load", empfangen(old));
 
 
 function empfangen(old){
+  document.getElementById("All").innerHTML  = "All";
+  document.getElementById("Favorites").innerHTML  = "";
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if(xhr.readyState === XMLHttpRequest.DONE && xhr.status==200){
+      document.getElementById("playerTableStyle").innerHTML = "" + old;
+      document.getElementById("All").innerHTML  = "All";
+      document.getElementById("Favorites").innerHTML  = "";
       var serverResponse = JSON.parse(xhr.responseText);
       for(var k in serverResponse) {
           console.log(serverResponse[k]);
-          old.innerHTML +=
+          document.getElementById("playerTableStyle").innerHTML +=
           "<tr> <td>" +serverResponse[k].name +
           "</td> <td>"+serverResponse[k].club +
           "</td> <td>"+serverResponse[k].coach +
@@ -27,16 +32,18 @@ function empfangen(old){
 
 function toggle(old){
   if(document.getElementById("All").innerHTML == "All"){
-  document.getElementById("All").innerHTML  = "";
-  document.getElementById("Favorites").innerHTML  = "Favorites";
-
+    document.getElementById("All").innerHTML  = "";
+    document.getElementById("Favorites").innerHTML  = "Favorites";
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if(xhr.readyState === XMLHttpRequest.DONE && xhr.status==200){
       var serverResponse = JSON.parse(xhr.responseText);
+      document.getElementById("playerTableStyle").innerHTML = "" + old;
+      document.getElementById("All").innerHTML  = "";
+      document.getElementById("Favorites").innerHTML  = "Favorites";
       for(var k in serverResponse) {
           console.log(serverResponse[k]);
-          old.innerHTML +=
+          document.getElementById("playerTableStyle").innerHTML +=
           "<tr> <td>" +serverResponse[k].name +
           "</td> <td>"+serverResponse[k].club +
           "</td> <td>"+serverResponse[k].coach +
@@ -54,7 +61,7 @@ function toggle(old){
   }else{
     document.getElementById("Favorites").innerHTML  = "";
     document.getElementById("All").innerHTML  = "All";
-    empfangen();
+    empfangen(old);
   }
 
 }

@@ -16,7 +16,7 @@ function validateForm(form) {
         (document.getElementById("Aktiv1").checked || document.getElementById("Aktiv2").checked) &&
         (new Date(document.getElementById("idDate").value).getFullYear() <= new Date().getFullYear()) ) {
 
-          //senden(form);
+          senden(form);
 
       }else{
           alert("Einige Eingaben sind fehlerhaft. Bitte ueberpruefen Sie ihre Eingaben.");
