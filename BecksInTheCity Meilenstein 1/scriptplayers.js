@@ -12,16 +12,7 @@ function empfangen(old){
       document.getElementById("All").innerHTML  = "All";
       document.getElementById("Favorites").innerHTML  = "";
       var serverResponse = JSON.parse(xhr.responseText);
-      for(var k in serverResponse) {
-          console.log(serverResponse[k]);
-          document.getElementById("playerTableStyle").innerHTML +=
-          "<tr> <td>" +serverResponse[k].name +
-          "</td> <td>"+serverResponse[k].club +
-          "</td> <td>"+serverResponse[k].coach +
-          "</td> <td>"+serverResponse[k].position +
-          "</td> <td>"+serverResponse[k].number +
-          "</td> <td>"+serverResponse[k].year +"</td> </tr>";
-        }
+      createTable(serverResponse);
     }else if(xhr.readyState === XMLHttpRequest.DONE){
       console.log(xhr.status);
       }
@@ -41,17 +32,8 @@ function toggle(old){
       document.getElementById("playerTableStyle").innerHTML = old;
       document.getElementById("All").innerHTML  = "";
       document.getElementById("Favorites").innerHTML  = "Favorites";
-      for(var k in serverResponse) {
-          console.log(serverResponse[k]);
-          document.getElementById("playerTableStyle").innerHTML +=
-          "<tr> <td>" +serverResponse[k].name +
-          "</td> <td>"+serverResponse[k].club +
-          "</td> <td>"+serverResponse[k].coach +
-          "</td> <td>"+serverResponse[k].position +
-          "</td> <td>"+serverResponse[k].number +
-          "</td> <td>"+serverResponse[k].year +"</td> </tr>";
-        }
-        document.getElementById("hallo").checked = true;
+      createTable(serverResponse);
+        document.getElementById("check").checked = true;
     }else if(xhr.readyState === XMLHttpRequest.DONE){
       console.log(xhr.status);
       }
@@ -60,9 +42,20 @@ function toggle(old){
   xhr.send();
 
   }else{
-    document.getElementById("Favorites").innerHTML  = "";
-    document.getElementById("All").innerHTML  = "All";
     empfangen(old);
   }
 
+}
+
+function createTable(serverResponse){
+  for(var k in serverResponse) {
+      console.log(serverResponse[k]);
+      document.getElementById("playerTableStyle").innerHTML +=
+      "<tr> <td>" +serverResponse[k].name +
+      "</td> <td>"+serverResponse[k].club +
+      "</td> <td>"+serverResponse[k].coach +
+      "</td> <td>"+serverResponse[k].position +
+      "</td> <td>"+serverResponse[k].number +
+      "</td> <td>"+serverResponse[k].year +"</td> </tr>";
+    }
 }
