@@ -59,7 +59,7 @@ app.route('/api/players').get((req, res)=> {
  */
 app.route('/api/players').post((req, res)=> {
     res.json({
-        message: 'Spieler wurde erfolgreich gespeichert'
+        message: 'Spieler wurde gespeichert'
     });
 });
 /*
@@ -67,7 +67,7 @@ app.route('/api/players').post((req, res)=> {
  */
 app.route('/api/players/:id').put((req, res)=> {
     res.json({
-        message: 'Spieler mit der ID ' + req.params.id + ' wurde erfolgreich geupdatet'
+        message: ' Der Spieler mit der ID ' + req.params.id + ' wurde geupdatet'
     });
 });
 /*
@@ -94,21 +94,21 @@ Ab hier Backend am
  */
 io.on('connection', (socket) => {
     var addedUsername = false;
-    socket.on('add user', (username) => {
+    socket.on('nutzerHinzufugen', (username) => {
         if (addedUsername) {
             return;
         }
 // Username wird in der Socket Session vermerkt
         socket.username = username;
         addUsername = true;
-        io.emit('user accede', {
+        io.emit('nutzerBeitreten', {
             username: socket.username
         });
         console.log('User: ' + socket.username);
     });
 
-    socket.on('new message', (data) => {
-        io.emit('new message', {
+    socket.on('neueNachricht', (data) => {
+        io.emit('neueNachricht', {
             username: socket.username,
             message: data
         });
