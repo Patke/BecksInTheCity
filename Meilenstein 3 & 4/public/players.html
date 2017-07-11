@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>BecksInTheCity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="../css/index.css" rel="stylesheet" type="text/css">
+  <ul id="navibereich">
+  <li id="navi01"><a href="index.html">Home</a></li>
+  <li id="navi02"><a href="addPlayers.html">AddPlayers</a></li>
+  <li id="navi03"><a href="players.html">Players</a></li>
+  <li id="navi04"><a href="chat.html">Chat</a></li>
+</ul>
+</head>
+<body id="Home">
+	<main>
+    <div id="tabellenbox">
+      <form name="myForm">
+        <table id="playerTableStyle">
+          <caption>
+            Roster
+          </caption>
+          <tr>
+            <td colspan="2">
+              <label class="switched">
+                <input type="checkbox" onclick="toggle(old)" id="check">
+                <div class="slider"></div>
+                <div id="Favorites"></div>
+              </label>
+            </td>
+            <td colspan="4">
+              <div id="All">All</div>
+            </td>
+          </tr>
+          <tr>
+            <td>Name</td> <td>Verein</td> <td>Coach</td> <td>Position</td> <td>Nummer</td> <td>Jahr</td>
+          </tr>
+        </table>
+      </form>
+    </div>
+	</main>
+  <footer>
+
+  </footer>
+  <script src="../javascript/scriptplayers.js">
+  </script>
+</body>
+</html>

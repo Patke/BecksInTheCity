@@ -1,5 +1,5 @@
 body {
-	background-image: url(./IbDXxHpmED-1920x1080.jpg);
+	background-image: url(../img/IbDXxHpmED-1920x1080.jpg);
 	background-size: 1440px 900px;
 }
 
@@ -15,7 +15,7 @@ footer {
 	padding-bottom: 33px;
   border-top: 3px solid #668BCC;
   border-bottom: 3px solid #668BCC;
-	background-image: url('./basketball.png');
+	background-image: url('../img/basketball.png');
 	background-size: 200px;
 	background-repeat: repeat repeat;
 }
@@ -43,6 +43,11 @@ caption {
 
 .slider {
   position: absolute;
+  top: 0;								/*Wieso wird der gebraucht, damit man einen festen Punkt hat wo man wieder hinspringen kann */
+  left: 0;
+  right: 0;
+  bottom: 0;
+	background-color: rgba(200, 0, 0, 0);
 }
 
 .slider::before {
@@ -90,6 +95,9 @@ input:checked + .slider:before { /*Nachbarselektor .slider:before wird nur anges
   background-color: #EDEDF8;
 }
 
+#players #navi03 a {    /* ohne Komma am Ende */
+  background-color: #c3d9ff;
+}
 #grey {
 	color: black;
 	margin-top: 60px;

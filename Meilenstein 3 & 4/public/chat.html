@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Awesome Boilerplate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="../css/index.css" rel="stylesheet" type="text/css">
+  <ul id="navibereich">
+  <li id="navi01"><a href="index.html">Home</a></li>
+  <li id="navi02"><a href="addPlayers.html">AddPlayers</a></li>
+  <li id="navi03"><a href="players.html">Players</a></li>
+  <li id="navi04"><a href="chat.html">Chat</a></li>
+</ul>
+</head>
+
+<body>
+	<main>
+      <section id="chat">
+          <form>
+              <center>
+                  <label for="nachrichten" id="nachricht">Nachrichten:</label>
+                  <textarea id="text"  cols="80" rows="15" maxlength="140" readonly placeholder="Willkommen, bitte gebe deinen Usernamen ein"></textarea><br>
+                  <label for="eingabe" id="username">Eingabe:</label>
+                  <input type="text" id="name" size="15" name="eingabe"/><br>
+                  <input id="senden" type="submit" value="Senden"/>
+              </center>
+          </form>
+          <ul id="content"></ul>
+      </section>
+
+	</main>
+  <p id="footer">
+	<footer>
+
+	</footer>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../javascript/chat.js"></script>
+
+  </p>
+</body>
+</html>

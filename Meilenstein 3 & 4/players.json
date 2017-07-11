@@ -1,0 +1,222 @@
+[
+  {
+    "_id": "59649131d4ec51842553f0c9",
+    "name": "Frankie",
+    "vorname": "Bonner",
+    "club": "AVENETRO",
+    "coach": "Effie Farmer",
+    "position": "Small Forward",
+    "number": 15,
+    "year": 1998,
+    "favorit": false
+  },
+  {
+    "_id": "59649131a4f8ade7c66fb502",
+    "name": "Parsons",
+    "vorname": "Fulton",
+    "club": "SNOWPOKE",
+    "coach": "Claudette Thomas",
+    "position": "Guard",
+    "number": 12,
+    "year": 1996,
+    "favorit": false
+  },
+  {
+    "_id": "596491310d01645a2c4a5d20",
+    "name": "Robbins",
+    "vorname": "Bentley",
+    "club": "EQUITAX",
+    "coach": "Hill Mosley",
+    "position": "Power Forward",
+    "number": 12,
+    "year": 1991,
+    "favorit": false
+  },
+  {
+    "_id": "59649131dbcee7285d08ed16",
+    "name": "Emilia",
+    "vorname": "Ball",
+    "club": "ZEPITOPE",
+    "coach": "Lee Morgan",
+    "position": "Wing",
+    "number": 15,
+    "year": 1990,
+    "favorit": false
+  },
+  {
+    "_id": "59649131c1026a1671115701",
+    "name": "Ophelia",
+    "vorname": "Shepard",
+    "club": "CONFERIA",
+    "coach": "Holloway Cleveland",
+    "position": "Wing",
+    "number": 9,
+    "year": 1970,
+    "favorit": false
+  },
+  {
+    "_id": "5964913103848e3f0eb0b8ce",
+    "name": "Henderson",
+    "vorname": "Griffin",
+    "club": "PLASMOSIS",
+    "coach": "Torres Blevins",
+    "position": "Power Forward",
+    "number": 10,
+    "year": 1985,
+    "favorit": false
+  },
+  {
+    "_id": "596491317982433eb7984865",
+    "name": "Perez",
+    "vorname": "Reeves",
+    "club": "ACCUFARM",
+    "coach": "Pierce Hess",
+    "position": "Power Forward",
+    "number": 12,
+    "year": 1993,
+    "favorit": false
+  },
+  {
+    "_id": "5964913140088f2b689654f0",
+    "name": "Summers",
+    "vorname": "Snyder",
+    "club": "NETPLAX",
+    "coach": "Veronica Ray",
+    "position": "Small Forward",
+    "number": 4,
+    "year": 1995,
+    "favorit": false
+  },
+  {
+    "_id": "59649131e3c17a554db9fb7e",
+    "name": "Harper",
+    "vorname": "Kirby",
+    "club": "ZINCA",
+    "coach": "Miller Jacobson",
+    "position": "Center",
+    "number": 11,
+    "year": 2000,
+    "favorit": false
+  },
+  {
+    "_id": "596491318a08e572da39f5dd",
+    "name": "Lisa",
+    "vorname": "Benjamin",
+    "club": "DARWINIUM",
+    "coach": "Foster Lyons",
+    "position": "Guard",
+    "number": 12,
+    "year": 2000,
+    "favorit": false
+  },
+  {
+    "_id": "596491319d92df03a430f555",
+    "name": "Suarez",
+    "vorname": "Marsh",
+    "club": "NIPAZ",
+    "coach": "Phoebe Whitney",
+    "position": "Guard",
+    "number": 11,
+    "year": 1974,
+    "favorit": false
+  },
+  {
+    "_id": "5964912156ac742c9212c352",
+    "name": "Nita",
+    "vorname": "Schmidt",
+    "club": "DIGIPRINT",
+    "coach": "Donovan Logan",
+    "position": "Small Forward",
+    "number": 9,
+    "year": 1986,
+    "favorit": true
+  },
+  {
+    "_id": "59649121cd6fa864e6960771",
+    "name": "Beck",
+    "vorname": "Reid",
+    "club": "ADORNICA",
+    "coach": "Cherry Finch",
+    "position": "Wing",
+    "number": 8,
+    "year": 1990,
+    "favorit": true
+  },
+  {
+    "_id": "59649121a3019a761af346db",
+    "name": "Madeleine",
+    "vorname": "Carroll",
+    "club": "MEMORA",
+    "coach": "Johnson Gonzales",
+    "position": "Small Forward",
+    "number": 9,
+    "year": 1972,
+    "favorit": true
+  },
+  {
+    "_id": "59649121fc3d9ffa87919399",
+    "name": "Ball",
+    "vorname": "Wilson",
+    "club": "SPRINGBEE",
+    "coach": "Zimmerman Kerr",
+    "position": "Center",
+    "number": 9,
+    "year": 1998,
+    "favorit": true
+  },
+  {
+    "_id": "59649121840647dcb05af30e",
+    "name": "Reba",
+    "vorname": "Young",
+    "club": "CENTREE",
+    "coach": "Avis Spence",
+    "position": "Power Forward",
+    "number": 11,
+    "year": 1972,
+    "favorit": true
+  },
+  {
+    "_id": "5964912142938b216d694230",
+    "name": "Nora",
+    "vorname": "Blevins",
+    "club": "SPORTAN",
+    "coach": "Cook Gaines",
+    "position": "Power Forward",
+    "number": 14,
+    "year": 1999,
+    "favorit": true
+  },
+  {
+    "_id": "59649121eec1014a4e648f4f",
+    "name": "Booker",
+    "vorname": "Martin",
+    "club": "ZYTREK",
+    "coach": "Huffman Nixon",
+    "position": "Center",
+    "number": 4,
+    "year": 1999,
+    "favorit": true
+  },
+  {
+    "_id": "596491212fcb03e5edb93420",
+    "name": "Jeanette",
+    "vorname": "Cummings",
+    "club": "FREAKIN",
+    "coach": "Bridgette English",
+    "position": "Power Forward",
+    "number": 13,
+    "year": 1973,
+    "favorit": true
+  },
+  {
+    "_id": "5964912180d04eed458ea7cd",
+    "name": "Chandra",
+    "vorname": "Dudley",
+    "club": "DRAGBOT",
+    "coach": "Berry Guzman",
+    "position": "Guard",
+    "number": 6,
+    "year": 1976,
+    "favorit": true
+  }
+]

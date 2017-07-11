@@ -5,7 +5,6 @@ document.getElementById("button").addEventListener("click", function(){
 
 function validateForm(form) {
 
-
       if (form.FirstName.value.match(/^([A-Za-z ]+)$/) &&
         form.Surname.value.match(/^([A-Za-z ]+)$/) &&
         form.Verein.value.match(/^([A-Za-z ]+)$/) &&
@@ -14,7 +13,9 @@ function validateForm(form) {
         form.Rueckennummer.value.match(/^([0-9])$/) &&
         form.Rueckennummer.value > 3 &&
         form.Rueckennummer.value < 16 &&
+        (document.getElementById("Aktiv1").checked || document.getElementById("Aktiv2").checked) &&
         (new Date(document.getElementById("idDate").value).getFullYear() <= new Date().getFullYear()) ) {
+
           senden(form);
 
       }else{
@@ -26,7 +27,7 @@ function validateForm(form) {
 function senden(form){
   var formData = new FormData(form);
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://188.166.165.74:13337/api/players', true);
+  xhr.open('POST', 'http://127.0.0.1:1337/api/players', true);
   xhr.responseType = 'json';
   xhr.onreadystatechange = function() {
     if(xhr.readyState === XMLHttpRequest.DONE && xhr.status==200){
@@ -37,5 +38,4 @@ function senden(form){
     }
   };
   xhr.send(formData);
-  alert("Senden abgeschlossen")
 }

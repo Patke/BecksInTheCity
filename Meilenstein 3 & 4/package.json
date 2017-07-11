@@ -1,0 +1,20 @@
+{
+  "name": "becksinthecity",
+  "version": "1.0.0",
+  "description": "We´re just the coolest people all over the world and this is probably our final Version",
+  "main": "server.js",
+  "scripts": {
+    "test": "nicht spezifiziert",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patke/BecksInTheCity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patke/BecksInTheCity/issues"
+  },
+  "homepage": "https://github.com/Patke/BecksInTheCity#readme"
+}
