@@ -12,7 +12,7 @@ $(document).ready(function () {
         username = userEingabe.val();
         if (username) {
             userEingabe.val('');
-            socket.emit('add user', username);
+            socket.emit('nutzerHinzufugen', username);
         }
     }
 
@@ -23,7 +23,7 @@ $(document).ready(function () {
         var message = userEingabe.val();
         if (userEingabe && username) {
             userEingabe.val('');
-            socket.emit('new message', message);
+            socket.emit('neueNachricht', message);
         }
     }
 
@@ -42,11 +42,11 @@ $(document).ready(function () {
     /*
      Was wird übertragen? Willkommen und der Username oder der Username + Nachricht
      */
-    socket.on('user accede', (data)=> {
+    socket.on('nutzerBeitreten', (data)=> {
         messages.append('Willkommen: ' + data.username + '\n');
     });
 
-    socket.on('new message', (data)=> {
+    socket.on('neueNachricht', (data)=> {
         messages.append(data.username + ': ' + data.message + '\n');
     });
 });
